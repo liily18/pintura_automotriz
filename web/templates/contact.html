@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sección de Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .contact-header {
+            background: linear-gradient(90deg, #19be19cc, #0d64e7);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: -50px;
+        }
+        .contact-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .contact-card i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+           /* Botones de contacto */
+           .contact-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #1e3c72;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: #2a5298;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sección de Encabezado -->
+<section class="contact-header">
+    <h2>¡Contáctanos!</h2>
+    <p> Estamos aquí para resolver tus dudas y brindarte el mejor servicio.</p>
+</section>
+
+<!-- Sección de Contacto -->
+<div class="container">
+    <div class="contact-info">
+        <!-- Correo -->
+        <div class="contact-card">
+            <i class="bi bi-envelope-fill"></i>
+            <h5>Correo Electrónico</h5>
+            <p>pyd.olguin@gmail.cl</p>
+            <a href="mailto:pyd.olguin@gmail.com">Enviar correo</a>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="contact-card">
+            <i class="bi bi-telephone-fill"></i>
+            <h5>Celular</h5>
+            <p>+569-00000000</p>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-card">
+            <i class="bi bi-whatsapp"></i>
+            <h5>WhatsApp</h5>
+            <p>+569 00000000</p>
+            <p>+569 00000000</p>
+            <a href="https://wa.me/56930822452" target="_blank">Chatear ahora</a>
+
+            
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-card">
+            <i class="bi bi-instagram"></i>
+            <h5>Instagram</h5>
+            <p>@taller_olguin</p>
+            <a href="" target="_blank">Visitar perfil</a>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Formulario de Contacto</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="ejemplo@email.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <select class="form-select" id="asunto" required>
+                <option value="" selected disabled>Selecciona un asunto</option>
+                <option value="cotizacion">Cotización</option>
+                <option value="duda">Duda</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="comentario" class="form-label">Comentario</label>
+            <textarea class="form-control" id="comentario" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; }
+    .footer { background: #222; color: white; padding: 40px 0; font-size: 14px; }
+    .footer-container { width: 80%; margin: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .footer-section { padding: 20px; }
+    .footer-section h2 { font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #00bcd4; display: inline-block; padding-bottom: 5px; }
+    .footer-section ul { list-style: none; }
+    .footer-section ul li { margin-bottom: 8px; }
+    .footer-section ul li a { text-decoration: none; color: white; transition: color 0.3s; }
+    .footer-section ul li a:hover { color: #00bcd4; }
+    .footer-section .social-icons { display: flex; gap: 15px; margin-top: 10px; }
+    .footer-section .social-icons a { color: white; font-size: 18px; transition: transform 0.3s, color 0.3s; }
+    .footer-section .social-icons a:hover { color: #00bcd4; transform: scale(1.2); }
+    .footer-bottom { text-align: center; margin-top: 20px; padding: 15px; background: #111; }
+    @media screen and (max-width: 768px) { .footer-container { grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (max-width: 480px) { .footer-container { grid-template-columns: 1fr; text-align: center; } .footer-section .social-icons { justify-content: center; } }
+</style>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa dedicada a la innovación y el desarrollo web, brindando soluciones eficientes y escalables.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Cotiza con Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contacto</h2>
+            <p><i class="fas fa-envelope"></i> contacto@miempresa.com</p>
+            <p><i class="fas fa-phone"></i> +56 9 1234 5678</p>
+            <p><i class="fas fa-map-marker-alt"></i> Santiago, Chile</p>
+        </div>
+        <div class="footer-section social">
+            <h2>Síguenos</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Mi Empresa | Todos los derechos reservados</p>
+    </div>
+</footer>
+
